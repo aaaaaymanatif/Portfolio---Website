@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ayman Atif</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="media-queries.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+    <main>
+     
+        <div id="container">
+        <nav>
+         <img src="assets/logo.png" title="Ayman Atif"/>
+            <ul>
+            <li><a onclick="ShowEl('home')">HOME</a></li>
+                <li><a onclick="ShowEl('skills')">MY SKILLS</a></li>
+                <li><a onclick="ShowEl('my-services')">MY SERVICES</a></li>
+                
+            </ul>
+            <button class="btn" onclick="ShowEl('social-media')"><a>Social Media</a></button>
+            <img onclick="OpenMenu()" src="assets/menu.png"/>
+         </nav>
+         <div id="home">
+         <div class="left">
+             <h4>Hi, there!</h4>
+             <p>I'm called<strong> Ayman Atif</strong>, and you are about to browse my <strong> portfolio</strong></p>
+             <h4>You can browse my projects samples to have an idea about my programming work.</h4>
+             <button class="btn" onclick="ShowEl('my-services')"><a>Browse Samples</a></button>
+             </div>
+             <div class="right">
+             <img src="assets/me/pic1.png"/>
+             </div>
+             <div class="circle"></div>
+         </div>
+         <div id="skills">
+         <div class="card">
+             
+             </div>
+             <div class="card">
+             <h1>My Skills</h1>
+                 <p>These are my skills that I have been developing since 2014</p>
+                 <div class="list">
+                    <a>C#</a>
+                     <a>Microsof Sql Server</a>
+                     <a>Asp.net</a>
+                     <a>html</a>
+                     <a>Css</a>
+                     <a>Javascript</a>
+                     <a>Php</a>
+                     <a>Mysql</a>
+                     <a>Json</a>
+                     <a>Jquery</a>
+                     <a>Ajax</a>
+                     <a>Xml</a>
+                     <a>Android Studio</a>
+                     <a>Java</a>
+                     <a>Sqlite</a>
+                     <a>Firebase Storage</a>
+                     <a>Firebase Realtime Database</a>
+                     <a>Vb.net</a>
+                 </div>
+             </div>
+         </div>
+         <div class="title">
+             <h1>-- About my services --</h1>
+             </div>
+         <div id="my-services">
+             <div class="inner">
+                 <div class="service">
+                     <div class="in"><img src="assets/android.png"/>
+                         <h3>Android Applications</h3>
+                        <p>I make android native applications, with android studio, I use Firebase, Mysql or Sqlite for database creation and management, depending on the purpose of the application.</p>
+                         <button onclick="Samples('android')" class="btn2"><a>View Samples</a></button>
+                     </div>
+                 </div>
+                  <div class="service">
+                     <div class="in"><img src="assets/website.png"/>
+                         <h3>Websites Projects</h3>
+                        <p>I'm a fullstack developer, I make fancy user interfaces, good user experience, and I write clean backend code, to ensure the creation of a beautiful and powerful website.</p>
+                         <button onclick="Samples('websites')" class="btn2"><a>View Samples</a></button>
+                     </div>
+                 </div>
+                 <div class="service">
+                     <div class="in"><img src="assets/computer.png"/>
+                         <h3>Desktop Applications</h3>
+                        <p>I'm .Net developer, I make various types of softwares, either management systems, utilities softwares, apps based on Artificial Intelligence...etc</p>
+                         <button class="btn2"><a>View Samples</a></button>
+                     </div>
+                 </div>
+             </div>
+             <div class="hidden"></div>
+         </div>
+         <div class="title">
+             <h1>-- Contact Me --</h1>
+             </div>
+         <div id="social-media">
+            <div id="information">
+                <div class="in">
+                    <div class="bar">
+                    <span><img src="assets/whatsapp.png"/></span>
+                         <span>
+                         <h3>Whatsapp</h3>
+                             <a>+212 675292841</a>
+                         </span>
+                    </div>
+                    <div class="bar">
+                    <span><img src="assets/gmail.png"/></span>
+                         <span>
+                         <h3>Email address</h3>
+                             <a>aaaaaymanatif@gmail.com</a>
+                         </span>
+                    </div>
+                    <div class="bar">
+                    <span><img src="assets/ig.png"/></span>
+                         <span>
+                         <h3>Instagram account</h3><a>https://www.instagram.com/a.y.m.a.n__a.t.i.f/</a>
+                         </span>
+                    </div>
+                     <div class="bar">
+                    <span><img src="assets/fb.png"/></span>
+                         <span>
+                         <h3>Facebook account</h3><a>https://www.facebook.com/aaaaaymanatif</a>
+                         </span>
+                    </div>
+                </div>
+             </div>
+         </div>
+         <div class="menu">
+         <div class="items">
+             <div class="top">
+             <img onclick="HideMenu()" src="assets/close.png"/>
+             </div>
+             <ul>
+            <li><a onclick="HideMenu();ShowEl('home')">HOME</a></li>
+                <li><a onclick="HideMenu();ShowEl('skills')">MY SKILLS</a></li>
+                <li><a onclick="HideMenu();ShowEl('my-services')">MY SERVICES</a></li>
+            </ul>
+            <button class="btn" onclick="HideMenu();ShowEl('social-media')"><a>Social Media</a></button>
+             </div>
+         </div>
+        </div>
+        </main>
+            <div class="cover"></div>   
+        <div id="android" class="samples">
+         <nav>
+         <img src="assets/logo.png" title="Ayman Atif"/>
+            <button class="btn" onclick="Home('android')"><a>Return back</a></button>
+         </nav>
+            <div id="layout">
+            
+        <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>A<strong> Trip Tracker</strong> application, it can let you <strong> track</strong> your trip using your gps location.</p>
+             <h4>It provides a feature to store all trips, with their information like name, description, images and more...</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/triptracker.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>A<strong> Music Player</strong> application with audio effects.</p>
+             <h4>This is just a template showcasing my UI creation abilities.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/musicplayer.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+        <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>An<strong> Online Courses</strong> application, that provides <strong> online videos</strong> for each course's category.</p>
+             <h4>Users can be either students, or teachers who upload videos.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/onlinecourses.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>An<strong> HD Wallpapers</strong> application, that provides <strong> online wallpapers</strong> to download.</p>
+             <h4>Users can also upload their own wallpapers to the app.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/hdwallpepers.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>An<strong> eCommerce</strong> application, it allows you to purchase clothes online.</p>
+             <h4>This application can store any type of products.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/ecommerce.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>A<strong> Translation</strong> application, that translates any source language to any target language.</p>
+             <h4>This application has voice recognition, and image recognition as well to detect text.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/translation.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>An<strong> Uber</strong> application, that provides <strong>online tracking</strong> to the vehicule path.</p>
+             <h4>A user can be either a driver, or a passenger in this application.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/uber.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>An<strong> Online Chatting</strong> application, that lets users <strong>connect</strong> all over the world.</p>
+             <h4>It's a light application with a powerful performance.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/messenger.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Android application!</h4>
+             <p>A<strong> Weather</strong> application, that provides daily and weekly weather information.</p>
+             <h4>It's a light application with a powerful performance.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="mobile">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/android/weather.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+            </div>
+        </div>
+             <div id="websites" class="samples">
+         <nav>
+         <img src="assets/logo.png" title="Ayman Atif"/>
+            <button class="btn" onclick="Home('websites')"><a>Return back</a></button>
+         </nav>
+            <div id="layout">
+            
+        <div class="project">
+                <div class="left">
+            <h4>Website!</h4>
+             <p>An<strong> eCommerce</strong> website, it lets users purchase goods online, and manage their <strong>orders</strong> with simplicity.</p>
+             <h4>It is provided with a dashboard for admins to manage orders and products.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="monitor">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/websites/ecommerce.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Website!</h4>
+             <p>A<strong> Music Market Dashboard</strong>, it lets user search for their favourite music.</p>
+             <h4>This project provides a fancy template to attract users to navigate more.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="monitor">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/websites/musicdashboard.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+            <div class="project">
+                <div class="left">
+            <h4>Website!</h4>
+             <p>A<strong> Showcase Website</strong> for agencies, to showcase their <strong>services and products</strong>.</p>
+             <h4>It is adaptable to any kind of service and product.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="monitor">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/websites/agency.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Website!</h4>
+             <p>A<strong> Dashboard</strong> page for admins, to manage their websites.</p>
+             <h4>This page is important for admins to manage their websites, like if they have an eCommerce website and would like to manage orders.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="monitor">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/websites/dashboard.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                
+                <div class="project">
+                <div class="left">
+            <h4>Website!</h4>
+             <p>A<strong> Notes</strong> webpage for anyone wanting to make <strong>memos</strong>.</p>
+             <h4>This page lets any user save notes, for a particular time, a user can choose multiple times and save many notes.</h4>
+            </div>
+            <div class="right">
+            
+                <div class="monitor">
+                    <video muted autoplay loop>
+                    <source src="assets/samples/websites/calendar.mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+                </div>
+                 
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
